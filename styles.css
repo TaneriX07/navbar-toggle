@@ -1,4 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --navy-blue: #000080;
+  --viking: #5BCADF;
+  --padua: #A8E3D0;
+  --tea-green: #CFEEC9;
+  --bermuda: #8CDBD4;
+  --vodka: #bfc0ee;
+  --baby-powder: #fefefa;
+  --bright-ube: #C9A1F0;
+  --dark-gray: 	#404040;
+  --darker-gray: 	#202020;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: #2BC0E4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav {
+  background: var(--tea-green);
+  box-shadow: var(--light-shadow);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  color: var(--viking);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.nav-toggle:hover {
+  color: var(--navy-blue);
+  transform: rotate(90deg);
+}
+
 .logo {
-  width: 300px;
-  height: 300px;
+  height: 70px;
+}
+
+.links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  display: block;
+  padding: 1rem;
+}
+
+.links a:hover {
+  background: var(--padua);
+  color: var(--baby-powder);
+  padding-left: 1.5rem;
+  transition: all 0.2s linear;
+}
+
+.social-icons {
+  display: none;
 }
