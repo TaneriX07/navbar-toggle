@@ -34,6 +34,10 @@ nav {
   box-shadow: var(--light-shadow);
 }
 
+li {
+  list-style-type: none;
+}
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -71,6 +75,7 @@ nav {
   color: black;
   display: block;
   padding: 1rem;
+  transition: all 0.2s linear;
 }
 
 .links a:hover {
@@ -85,13 +90,13 @@ nav {
 }
 
 .links {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: all 0.2s linear;
+  transition: all 0.5s linear;
 }
 
 .show-links {
-  height: 10rem;
+  max-height: 20rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -108,10 +113,6 @@ nav {
 
   .nav-toggle {
     display: none;
-  }
-
-  li {
-    list-style-type: none;
   }
 
   .links {
